@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IterableSDK
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 

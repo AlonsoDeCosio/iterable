@@ -1,24 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09u-u3-v7G">
+                                <rect key="frame" x="139.5" y="438" width="135" height="30"/>
+                                <state key="normal" title="Update User Profile"/>
+                                <connections>
+                                    <action selector="updateProfile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DEM-qW-GOe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VM5-mn-529">
+                                <rect key="frame" x="163" y="490" width="88" height="30"/>
+                                <state key="normal" title="Create Event"/>
+                                <connections>
+                                    <action selector="eventAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zXt-gd-ieE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buw-4K-0RS">
+                                <rect key="frame" x="167.5" y="552" width="79" height="30"/>
+                                <state key="normal" title="Open Inbox"/>
+                                <connections>
+                                    <action selector="openInbox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1e0-1P-X2x"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="09u-u3-v7G" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="E47-S3-9th"/>
+                            <constraint firstItem="VM5-mn-529" firstAttribute="top" secondItem="09u-u3-v7G" secondAttribute="bottom" constant="22" id="EZm-ar-CDF"/>
+                            <constraint firstItem="VM5-mn-529" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="T3f-zB-NuL"/>
+                            <constraint firstItem="buw-4K-0RS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="THD-RO-X24"/>
+                            <constraint firstItem="09u-u3-v7G" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ai1-oe-Anu"/>
+                            <constraint firstItem="buw-4K-0RS" firstAttribute="top" secondItem="VM5-mn-529" secondAttribute="bottom" constant="32" id="wa2-8L-Q3T"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-587" y="-329"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
