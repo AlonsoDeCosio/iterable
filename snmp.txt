@@ -1,0 +1,10 @@
+#Allow read-access with the following SNMP Community String:
+rocommunity public
+# Add the name of this ship where this device is located
+syslocation <location>
+# Add the name of the contact for the device
+syscontact <contact name>
+# Add the System Name of the device
+sysName <device name>
+# MAC OS system identifier
+sysobjectid 1.3.6.1.4.1.8072.3.2.16
