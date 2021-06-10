@@ -8,3 +8,6 @@ syscontact <contact name>
 sysName <device name>
 # MAC OS system identifier
 sysobjectid 1.3.6.1.4.1.8072.3.2.16
+
+
+S6=}8Sz&=z5/]~[jCHvecbt{g%#&F8j]
